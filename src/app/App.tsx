@@ -397,10 +397,11 @@ function Hero() {
           className="w-full h-full object-cover object-[center_20%]"
         />
         {/* layered dark overlay — heavier at bottom for legibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#050714]/55 via-[#050714]/25 to-[#050714]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#050714]/75 via-transparent to-[#050714]/50" />
-        {/* indigo color grade */}
-        <div className="absolute inset-0 bg-[#0a0a2a]/20 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#050714]/70 via-[#050714]/40 to-[#050714]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#050714]/80 via-transparent to-[#050714]/60" />
+        {/* indigo color grade — pulls warm/yellow tones toward Nightcrawler's blue-violet palette */}
+        <div className="absolute inset-0 bg-[#141b45]/45 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#3d0a1a]/35 via-transparent to-[#0a1240]/40 mix-blend-color" />
       </div>
 
       {/* Cursor smoke trail */}
@@ -438,20 +439,23 @@ function Hero() {
           <span className="w-1.5 h-1.5 rounded-full bg-[#3d7fe0] eye-pulse" />
         </motion.div>
 
-        {/* Giant Xplorer */}
+        {/* X-97 title */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="font-['Bangers'] leading-none tracking-widest hero-glow select-none"
+          className="font-['Bangers'] leading-none hero-glow select-none inline-block"
           style={{
-            fontSize: "clamp(6rem, 22vw, 20rem)",
-            background: "linear-gradient(175deg, #ffffff 0%, #3d7fe0 45%, #e8560a 100%)",
+            fontSize: "clamp(4.5rem, 15vw, 12rem)",
+            letterSpacing: "0.03em",
+            transform: "skewX(-8deg)",
+            WebkitTextStroke: "2px rgba(5,7,20,0.4)",
+            background: "linear-gradient(140deg, #6fa8ff 0%, #ddd8f0 42%, #ff2f4e 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
         >
-          Xplorer
+          X-97
         </motion.h1>
 
         {/* Name + tagline */}
