@@ -6,6 +6,23 @@ import nightcrawlerImg from "@/imports/images__1_.jpg";
 import xmen97Img from "@/imports/x-men-97_h5s7.jpg";
 import comicCoverImg from "@/imports/912gHLEZkmL._AC_UF1000_1000_QL80_.jpg";
 import season2Img from "@/imports/images.jpg";
+import galleryImg1 from "@/imports/gallery-amazing-xmen-quest-for-nightcrawler.jpg";
+import galleryImg2 from "@/imports/gallery-giant-size-xmen-nightcrawler.jpg";
+import galleryImg3 from "@/imports/gallery-nightcrawler-classic-flip.webp";
+import galleryImg4 from "@/imports/gallery-uncanny-xmen-nightcrawler-sword.webp";
+import galleryImg5 from "@/imports/gallery-cyclops-optic-blast.jpg";
+import galleryImg6 from "@/imports/gallery-avx-alien-vs-xmen.jpg";
+import galleryImg7 from "@/imports/gallery-xmen-classic-cover.jpg";
+import galleryImg8 from "@/imports/gallery-all-new-xmen-team.webp";
+import galleryImg9 from "@/imports/gallery-xmen-prime.jpg";
+import galleryImg10 from "@/imports/gallery-exceptional-xmen.jpg";
+import galleryImg11 from "@/imports/gallery-xmen-100-vintage.avif";
+import galleryImg12 from "@/imports/gallery-xmen-new-beginning.jpg";
+import galleryImg13 from "@/imports/gallery-avengers-team.webp";
+import galleryImg14 from "@/imports/gallery-x-1-moon.jpg";
+import galleryImg15 from "@/imports/gallery-excalibur-team.jpg";
+import galleryImg16 from "@/imports/gallery-xmen-vs-xforce.jpg";
+import galleryImg17 from "@/imports/gallery-nightcrawler-portrait.jpg";
 
 /* ─── Global keyframes & overrides ─────────────────────────────────────── */
 const STYLES = `
@@ -423,7 +440,7 @@ function Hero() {
       {/* Content */}
       <div
         ref={contentRef}
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-24 transition-transform duration-300 ease-out"
+        className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-16 transition-transform duration-300 ease-out"
       >
         {/* Eyebrow badge */}
         <motion.div
@@ -444,11 +461,10 @@ function Hero() {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="font-['Bangers'] leading-none hero-glow select-none inline-block"
+          className="font-['Bangers'] leading-none hero-glow select-none block text-center mx-auto -mt-4 mb-2"
           style={{
             fontSize: "clamp(4.5rem, 15vw, 12rem)",
             letterSpacing: "0.03em",
-            transform: "skewX(-8deg)",
             WebkitTextStroke: "2px rgba(5,7,20,0.4)",
             background: "linear-gradient(140deg, #6fa8ff 0%, #ddd8f0 42%, #ff2f4e 100%)",
             WebkitBackgroundClip: "text",
@@ -668,6 +684,125 @@ const galleryItems = [
     title: "Season Two Begins",
     desc: "Disney+ — Now Streaming",
     span: "md:col-span-2",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg1,
+    title: "The Quest for Nightcrawler",
+    desc: "Amazing X-Men, Vol. 1",
+    span: "",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg2,
+    title: "Giant-Size Nightcrawler",
+    desc: "X-Men Giant-Size #1",
+    span: "",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg3,
+    title: "Acrobat of the Impossible",
+    desc: "Classic Nightcrawler Art",
+    span: "",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg4,
+    title: "Blade in the Brimstone",
+    desc: "Uncanny X-Men, Vol. 6 #3",
+    span: "md:col-span-2",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg5,
+    title: "Optic Overdrive",
+    desc: "Cyclops in Action",
+    span: "",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg6,
+    title: "Alien vs. X-Men",
+    desc: "AvX #1",
+    span: "",
+    pos: "object-top",
+  },
+  {
+    img: galleryImg7,
+    title: "Break Free",
+    desc: "X-Men Classic Cover",
+    span: "",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg8,
+    title: "All-New, All Different",
+    desc: "All-New X-Men",
+    span: "",
+    pos: "object-top",
+  },
+  {
+    img: galleryImg9,
+    title: "X-Men Prime",
+    desc: "Team Reunited",
+    span: "",
+    pos: "object-top",
+  },
+  {
+    img: galleryImg10,
+    title: "From the Ashes",
+    desc: "Exceptional X-Men #1",
+    span: "",
+    pos: "object-top",
+  },
+  {
+    img: galleryImg11,
+    title: "The Spectacular 100th",
+    desc: "X-Men #100, 1976",
+    span: "md:col-span-2",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg12,
+    title: "A New Beginning",
+    desc: "X-Men #1, Legacy #301",
+    span: "",
+    pos: "object-top",
+  },
+  {
+    img: galleryImg13,
+    title: "Assemble",
+    desc: "Marvel Ensemble Art",
+    span: "",
+    pos: "object-top",
+  },
+  {
+    img: galleryImg14,
+    title: "X #1",
+    desc: "Team on the Moon",
+    span: "",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg15,
+    title: "Excalibur Rises",
+    desc: "Team Portrait",
+    span: "",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg16,
+    title: "X-Men vs. X-Force",
+    desc: "Animated-Style Cover",
+    span: "md:col-span-2",
+    pos: "object-center",
+  },
+  {
+    img: galleryImg17,
+    title: "One More Bamf",
+    desc: "Nightcrawler Portrait",
+    span: "",
     pos: "object-center",
   },
 ];
